@@ -1,0 +1,61 @@
+<!-- res/drawable/gradient_button_neon.xml -->
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- Outer Glow Layer -->
+    <item>
+        <shape android:shape="rectangle">
+            <solid android:color="#00FFFF"/>
+            <corners android:radius="30dp"/>
+            <padding
+                android:top="0dp"
+                android:left="0dp"
+                android:right="0dp"
+                android:bottom="0dp"/>
+        </shape>
+    </item>
+
+    <!-- Base Gradient Layer -->
+    <item>
+        <shape android:shape="rectangle">
+            <gradient
+                android:startColor="#1A2A6C"
+                android:endColor="#B21F1F"
+                android:centerColor="#FDBB2D"
+                android:angle="450"/>
+            <corners android:radius="28dp"/>
+            <stroke
+                android:width="3dp"
+                android:color="#FFFFFF"/>
+        </shape>
+    </item>
+
+    <!-- Inner Highlight Layer -->
+    <item>
+        <shape android:shape="rectangle">
+            <gradient
+                android:startColor="#33FFFFFF"
+                android:endColor="#00FFFFFF"
+                android:angle="80"/>
+            <corners android:radius="28dp"/>
+            <padding
+                android:top="0dp"
+                android:left="0dp"
+                android:right="0dp"
+                android:bottom="0dp"/>
+        </shape>
+    </item>
+
+    <!-- Inner Shadow (Inset Effect) -->
+    <item>
+        <shape android:shape="rectangle">
+            <solid android:color="#33000000"/>
+            <corners android:radius="28dp"/>
+            <padding
+                android:top="4dp"
+                android:left="4dp"
+                android:right="4dp"
+                android:bottom="4dp"/>
+        </shape>
+    </item>
+
+</layer-list>

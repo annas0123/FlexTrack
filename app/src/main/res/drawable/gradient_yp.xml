@@ -1,0 +1,8 @@
+<!-- res/drawable/edittext_gradient_horizontal.xml -->
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+    <gradient
+        android:startColor="#FF57C7"
+        android:endColor="#FFC107"
+        android:angle="0" />
+    <corners android:radius="16dp" />
+</shape>

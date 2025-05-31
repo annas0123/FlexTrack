@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+    <!-- Permissions for receiving boot completed and wake lock -->
+    <uses-permission android:name="android.permission.POST_NOTIFICATIONS" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/flextracklogo"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/flextracklogo_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.FlexTrack"
+        tools:targetApi="31">
+        <activity
+            android:name=".AboutUs"
+            android:exported="false" />
+        <activity
+            android:name=".detail"
+            android:exported="false" />
+        <activity
+            android:name=".tips"
+            android:exported="false" />
+        <activity
+            android:name=".challengedetailactivity"
+            android:exported="false" />
+        <activity
+            android:name=".challenge365"
+            android:exported="false" />
+        <activity
+            android:name=".DayDetailActivityHard"
+            android:exported="false" />
+        <activity
+            android:name=".hard"
+            android:exported="false" />
+        <activity
+            android:name=".DayDetailActivityMedium"
+            android:exported="false" />
+        <activity
+            android:name=".medium"
+            android:exported="false" />
+        <activity
+            android:name=".DayDetailActivity"
+            android:exported="false" />
+        <activity
+            android:name=".easy"
+            android:exported="false" />
+        <activity
+            android:name=".PlanCategories"
+            android:exported="false" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity> <!-- Registering the AlarmReceiver -->
+        <receiver
+            android:name=".AlarmReceiver"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+                <action android:name="android.intent.action.ACTION_BOOT_COMPLETED" />
+            </intent-filter>
+        </receiver>
+    </application>
+
+</manifest>

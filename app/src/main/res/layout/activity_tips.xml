@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    android:padding="1dp">
+
+
+        <com.google.android.material.appbar.AppBarLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <androidx.appcompat.widget.Toolbar
+                android:id="@+id/toolbaar"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                android:background="@drawable/design10"
+
+                android:layout_gravity="center"
+                android:gravity="center">
+                <ImageView
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:onClick="onclickfooddetails"
+                    android:src="@drawable/arrow_left"
+                    android:scaleType="fitXY"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:padding="10dp"
+                    android:id="@+id/headingTextView"
+
+                    android:text="Tips &amp; Diet"
+                    android:textColor="@color/white"
+                    android:textSize="25sp"
+                    android:textStyle="bold"/>
+            </androidx.appcompat.widget.Toolbar>
+        </com.google.android.material.appbar.AppBarLayout>
+
+
+
+    <Button
+        android:id="@+id/included"
+
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_marginTop="70dp"
+        android:background="@drawable/design10"
+        android:gravity="center_horizontal"
+        android:padding="20dp"
+        android:text="Exercises Included in This App"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        android:textSize="20dp"
+
+        android:textAllCaps="true"/>
+
+    <Space
+        android:layout_width="match_parent"
+        android:id="@+id/line1"
+        android:layout_height="1dp"
+        android:layout_below="@+id/included"
+        />
+
+    <Button
+        android:id="@+id/time"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/design10"
+        android:gravity="center_horizontal"
+        android:padding="20dp"
+        android:text="Take Your Time"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        android:textSize="20dp"
+        android:layout_below="@+id/line1"
+        android:textAllCaps="true"/>
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:id="@+id/line2"
+        android:layout_below="@+id/time"
+        />
+    <Button
+        android:id="@+id/complete"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/design10"
+        android:gravity="center_horizontal"
+        android:padding="20dp"
+        android:text="Complete Your Daily Exercises"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        android:textSize="20dp"
+        android:layout_below="@+id/line2"
+        android:textAllCaps="true"/>
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:id="@+id/line3"
+        android:layout_below="@+id/complete"
+        />
+
+     <Button
+        android:id="@+id/delete"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/design10"
+        android:gravity="center_horizontal"
+        android:padding="20dp"
+        android:text="Manage Your Progress"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        android:textSize="20dp"
+        android:layout_below="@+id/line3"
+        android:textAllCaps="true"/>
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:id="@+id/line4"
+        android:layout_below="@+id/delete"
+        />
+
+     <Button
+        android:id="@+id/limited"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/design10"
+        android:gravity="center_horizontal"
+        android:padding="20dp"
+        android:text="Limited Resources"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        android:textSize="20dp"
+        android:layout_below="@+id/line4"
+        android:textAllCaps="true"/>
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:id="@+id/line5"
+        android:layout_below="@+id/limited"
+        />
+
+
+</RelativeLayout>

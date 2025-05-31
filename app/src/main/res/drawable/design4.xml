@@ -1,0 +1,34 @@
+<!-- res/drawable/gradient_button_3d.xml -->
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- Outer Shadow -->
+    <item>
+        <shape android:shape="rectangle">
+            <solid android:color="#33000000"/>
+            <corners android:radius="25dp"/>
+            <padding android:bottom="4dp"/>
+        </shape>
+    </item>
+
+    <!-- Gradient Layer -->
+    <item android:top="4dp">
+        <shape android:shape="rectangle">
+            <gradient
+                android:startColor="#FF512F"
+                android:endColor="#DD2476"
+                android:angle="45"/>
+            <corners android:radius="25dp"/>
+        </shape>
+    </item>
+
+    <!-- Inner Glow -->
+    <item android:left="4dp" android:right="4dp" android:top="4dp" android:bottom="8dp">
+        <shape android:shape="rectangle">
+            <gradient
+                android:startColor="#920F19E1"
+                android:endColor="#00FFFFFF"
+                android:angle="90"/>
+            <corners android:radius="25dp"/>
+            <padding android:bottom="20dp" android:left="20dp" android:right="20dp" android:top="20dp"/>
+        </shape>
+    </item>
+</layer-list>

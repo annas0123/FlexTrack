@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/black"
+    android:padding="16dp">
+
+    <EditText
+        android:id="@+id/editTextHour"
+        android:layout_width="match_parent"
+        android:textColor="@color/white"
+
+        android:layout_height="wrap_content"
+        android:hint="Hour"
+        android:background="@drawable/design4"
+
+        android:inputType="number" />
+
+    <EditText
+        android:id="@+id/editTextMinute"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/white"
+
+        android:background="@drawable/design4"
+
+        android:hint="Minute"
+        android:inputType="number" />
+
+    <Spinner
+        android:id="@+id/spinnerAmPm"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="5dp"
+        android:textColor="@color/white"
+
+        android:background="@drawable/design1"
+
+
+        android:entries="@array/am_pm" />
+
+    <Button
+        android:id="@+id/buttonSetReminder"
+        android:layout_width="match_parent"
+        android:background="@drawable/design2"
+        android:textColor="@color/white"
+
+        android:layout_height="wrap_content"
+        android:text="Set Reminder" />
+
+    <Button
+        android:id="@+id/buttonResetPassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/design2"
+        android:textColor="@color/white"
+
+        android:text="Reset Password"
+        android:layout_marginTop="8dp" />
+</LinearLayout>

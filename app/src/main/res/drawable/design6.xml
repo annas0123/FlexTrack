@@ -1,0 +1,31 @@
+<!-- res/drawable/gradient_button_glass.xml -->
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- Frosted Background -->
+    <item>
+        <shape android:shape="rectangle">
+            <solid android:color="#80F30707"/>
+            <corners android:radius="20dp"/>
+        </shape>
+    </item>
+
+    <!-- Glassy Gradient Overlay -->
+    <item>
+        <shape android:shape="rectangle">
+            <gradient
+                android:startColor="#4D5CF30B"
+                android:endColor="#770D33F3"
+                android:angle="45"/>
+            <corners android:radius="20dp"/>
+        </shape>
+    </item>
+
+    <!-- Inner Border -->
+    <item>
+        <shape android:shape="rectangle">
+            <stroke
+                android:width="2dp"
+                android:color="#CC28F8E0"/>
+            <corners android:radius="20dp"/>
+        </shape>
+    </item>
+</layer-list>
